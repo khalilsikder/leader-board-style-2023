@@ -7,7 +7,8 @@ body{
 }
 main{
 display: flex;
-justify-content: center;
+flex-direction: column;
+align-items: center;
 }
 .container{
 width: 870px;
@@ -42,6 +43,7 @@ hr{
 .blogs{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    grid-row-gap:16px;
 }
 .blog{
     display: flex;
@@ -60,4 +62,19 @@ hr{
 }
 .author{
     color: #562EFF;
+}
+.courses{
+    display: flex;
+}
+.course .course-banner img{
+    width: 266px;
+    height: 139px;
+}
+.course-info .star{
+    color:burlywood;
+    font-size: 25px;
+}
+.course-info{
+    display: flex;
+    align-items: center;
 }
